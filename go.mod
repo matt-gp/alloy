@@ -823,7 +823,7 @@ require (
 	github.com/prometheus-community/prom-label-proxy v0.11.0 // indirect
 	github.com/prometheus/alertmanager v0.28.1 // indirect
 	github.com/prometheus/exporter-toolkit v0.14.1 // indirect
-	github.com/prometheus/otlptranslator v0.0.0-20250620074007-94f535e0c588 // indirect
+	github.com/prometheus/otlptranslator v0.0.2 // indirect
 	github.com/puzpuzpuz/xsync/v3 v3.5.1 // indirect
 	github.com/rcrowley/go-metrics v0.0.0-20250401214520-65e299d6c5c9 // indirect
 	github.com/redis/go-redis/v9 v9.11.0 // indirect

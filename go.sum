@@ -395,6 +395,8 @@ github.com/HdrHistogram/hdrhistogram-go v1.1.2 h1:5IcZpTvzydCQeHzK4Ef/D5rrSqwxob
 github.com/HdrHistogram/hdrhistogram-go v1.1.2/go.mod h1:yDgFjdqOqDEKOvasDdhWNXYg9BVp4O+o5f6V/ehm6Oo=
 github.com/IBM/sarama v1.46.0 h1:+YTM1fNd6WKMchlnLKRUB5Z0qD4M8YbvwIIPLvJD53s=
 github.com/IBM/sarama v1.46.0/go.mod h1:0lOcuQziJ1/mBGHkdp5uYrltqQuKQKM5O5FOWUQVVvo=
+github.com/Khan/genqlient v0.8.1 h1:wtOCc8N9rNynRLXN3k3CnfzheCUNKBcvXmVv5zt6WCs=
+github.com/Khan/genqlient v0.8.1/go.mod h1:R2G6DzjBvCbhjsEajfRjbWdVglSH/73kSivC9TLWVjU=
 github.com/KimMachineGun/automemlimit v0.7.1 h1:QcG/0iCOLChjfUweIMC3YL5Xy9C3VBeNmCZHrZfJMBw=
 github.com/KimMachineGun/automemlimit v0.7.1/go.mod h1:QZxpHaGOQoYvFhv/r4u3U0JTC2ZcOwbSr11UZF46UBM=
 github.com/Lusitaniae/apache_exporter v0.11.1-0.20220518131644-f9522724dab4 h1:UEm6tMvLH2t2honcWG0q+h0qr/60++9cuh/fy7hLyMc=
@@ -449,6 +451,8 @@ github.com/alecthomas/units v0.0.0-20240927000941-0f3dac36c52b/go.mod h1:fvzegU4
 github.com/alicebob/miniredis v2.5.0+incompatible h1:yBHoLpsyjupjz3NL3MhKMVkR41j82Yjf3KFv7ApYzUI=
 github.com/alicebob/miniredis/v2 v2.35.0 h1:QwLphYqCEAo1eu1TqPRN2jgVMPBweeQcR21jeqDCONI=
 github.com/alicebob/miniredis/v2 v2.35.0/go.mod h1:TcL7YfarKPGDAthEtl5NBeHZfeUQj6OXMm/+iu5cLMM=
+github.com/andreyvit/diff v0.0.0-20170406064948-c7f18ee00883 h1:bvNMNQO63//z+xNgfBlViaCIJKLlCJ6/fmUseuG0wVQ=
+github.com/andreyvit/diff v0.0.0-20170406064948-c7f18ee00883/go.mod h1:rCTlJbsFo29Kk6CurOXKm700vrz8f0KW0JNfpkRJY/8=
 github.com/andybalholm/brotli v1.1.1 h1:PR2pgnyFznKEugtsUo0xLdDop5SKXd5Qf5ysW+7XdTA=
 github.com/andybalholm/brotli v1.1.1/go.mod h1:05ib4cKhjx3OQYUY22hTVd34Bc8upXjOLL2rKwwZBoA=
 github.com/anmitsu/go-shlex v0.0.0-20200514113438-38f4b401e2be h1:9AeTilPcZAjCFIImctFaOjnTIavg87rW78vTPkQqLI8=
@@ -1092,6 +1096,8 @@ github.com/google/go-cmp v0.5.9/go.mod h1:17dUlkBOakJ0+DkrSSNjCkIjxS6bF9zb3elmeN
 github.com/google/go-cmp v0.6.0/go.mod h1:17dUlkBOakJ0+DkrSSNjCkIjxS6bF9zb3elmeNGIjoY=
 github.com/google/go-cmp v0.7.0 h1:wk8382ETsv4JYUZwIsn6YpYiWiBsYLSJiTsyBybVuN8=
 github.com/google/go-cmp v0.7.0/go.mod h1:pXiqmnSA92OHEEa9HXL2W4E7lf9JzCmGVUdgjX3N/iU=
+github.com/google/go-github/v75 v75.0.0 h1:k7q8Bvg+W5KxRl9Tjq16a9XEgVY1pwuiG5sIL7435Ic=
+github.com/google/go-github/v75 v75.0.0/go.mod h1:H3LUJEA1TCrzuUqtdAQniBNwuKiQIqdGKgBo1/M/uqI=
 github.com/google/go-querystring v1.1.0 h1:AnCroh3fv4ZBgVIf1Iwtovgjaw/GiKJo8M8yD/fhyJ8=
 github.com/google/go-querystring v1.1.0/go.mod h1:Kcdr2DB4koayq7X8pmAG4sNG59So17icRSOU623lUBU=
 github.com/google/go-tpm v0.9.6 h1:Ku42PT4LmjDu1H5C5ISWLlpI1mj+Zq7sPGKoRw2XROA=
@@ -1939,6 +1945,8 @@ github.com/open-telemetry/opentelemetry-collector-contrib/receiver/filestatsrece
 github.com/open-telemetry/opentelemetry-collector-contrib/receiver/filestatsreceiver v0.134.0/go.mod h1:nINvtdetjLDmYfaFruOsEJe/+Vx0i3kw5b/9LgF1sNM=
 github.com/open-telemetry/opentelemetry-collector-contrib/receiver/fluentforwardreceiver v0.134.0 h1:xu1P3kWhMw2QQC5zv+m8wxbdSfTLIh6dh3ZQM48QPCg=
 github.com/open-telemetry/opentelemetry-collector-contrib/receiver/fluentforwardreceiver v0.134.0/go.mod h1:Qxt5ecDhgcion6dJTwHXuCXdjdsfnXyagDPWg+Tn83Q=
+github.com/open-telemetry/opentelemetry-collector-contrib/receiver/githubreceiver v0.137.0 h1:DEPWw5wrrv9WPe90DJTUn5SJrHTzc0JXcwK1UuUK+Ls=
+github.com/open-telemetry/opentelemetry-collector-contrib/receiver/githubreceiver v0.137.0/go.mod h1:AiYD/zjQrHWs1gl3soludjFML3Ick4D1lzBbnrZY6bg=
 github.com/open-telemetry/opentelemetry-collector-contrib/receiver/googlecloudpubsubreceiver v0.134.0 h1:4DSl1ANmIALz4X/TDfTg8zzwzsy5nCd6XseQiNc1Fhk=
 github.com/open-telemetry/opentelemetry-collector-contrib/receiver/googlecloudpubsubreceiver v0.134.0/go.mod h1:mOcfDQNDKqfz1wQueULIepFrQHV8ksPr5qI68jWvq/I=
 github.com/open-telemetry/opentelemetry-collector-contrib/receiver/hostmetricsreceiver v0.134.0 h1:PtPdfdJUlqtIelkOKHndyf/+jXNbQ7/aQ8D0SmvSaEU=
@@ -2276,8 +2284,8 @@ github.com/spf13/cast v1.9.2 h1:SsGfm7M8QOFtEzumm7UZrZdLLquNdzFYfIbEXntcFbE=
 github.com/spf13/cast v1.9.2/go.mod h1:jNfB8QC9IA6ZuY2ZjDp0KtFO2LZZlg4S/7bzP6qqeHo=
 github.com/spf13/cobra v0.0.5/go.mod h1:3K3wKZymM7VvHMDS9+Akkh4K60UwM26emMESw8tLCHU=
 github.com/spf13/cobra v1.5.0/go.mod h1:dWXEIy2H428czQCjInthrTRUg7yKbok+2Qi/yBIJoUM=
-github.com/spf13/cobra v1.9.1 h1:CXSaggrXdbHK9CF+8ywj8Amf7PBRmPCOJugH954Nnlo=
-github.com/spf13/cobra v1.9.1/go.mod h1:nDyEzZ8ogv936Cinf6g1RU9MRY64Ir93oCnqb9wxYW0=
+github.com/spf13/cobra v1.10.1 h1:lJeBwCfmrnXthfAupyUTzJ/J4Nc1RsHC/mSRU2dll/s=
+github.com/spf13/cobra v1.10.1/go.mod h1:7SmJGaTHFVBY0jW4NXGluQoLvhqFQM+6XSKD+P4XaB0=
 github.com/spf13/jwalterweatherman v1.0.0/go.mod h1:cQK4TGJAtQXfYWX+Ddv3mKDzgVb68N+wFjFa4jdeBTo=
 github.com/spf13/jwalterweatherman v1.1.0 h1:ue6voC5bR5F8YxI5S67j9i582FU4Qvo2bmqnqMYADFk=
 github.com/spf13/jwalterweatherman v1.1.0/go.mod h1:aNWZUN0dPAAO/Ljvb5BEdw96iTZ0EXowPYD95IqWIGo=
@@ -2394,6 +2402,8 @@ github.com/ugorji/go/codec v0.0.0-20181204163529-d75b2dcb6bc8/go.mod h1:VFNgLljT
 github.com/ugorji/go/codec v1.1.7/go.mod h1:Ax+UKWsSmolVDwsd+7N3ZtXu+yMGCf907BLYF3GoBXY=
 github.com/valyala/fastjson v1.6.4 h1:uAUNq9Z6ymTgGhcm0UynUAB6tlbakBrz6CQFax3BXVQ=
 github.com/valyala/fastjson v1.6.4/go.mod h1:CLCAqky6SMuOcxStkYQvblddUtoRxhYMGLrsQns1aXY=
+github.com/vektah/gqlparser/v2 v2.5.22 h1:yaaeJ0fu+nv1vUMW0Hl+aS1eiv1vMfapBNjpffAda1I=
+github.com/vektah/gqlparser/v2 v2.5.22/go.mod h1:xMl+ta8a5M1Yo1A1Iwt/k7gSpscwSnHZdw7tfhEGfTM=
 github.com/vertica/vertica-sql-go v1.3.3 h1:fL+FKEAEy5ONmsvya2WH5T8bhkvY27y/Ik3ReR2T+Qw=
 github.com/vertica/vertica-sql-go v1.3.3/go.mod h1:jnn2GFuv+O2Jcjktb7zyc4Utlbu9YVqpHH/lx63+1M4=
 github.com/vincent-petithory/dataurl v1.0.0 h1:cXw+kPto8NLuJtlMsI152irrVw9fRDX8AbShPRpg2CI=
@@ -2689,8 +2699,8 @@ go.opentelemetry.io/contrib/propagators/jaeger v1.35.0 h1:UIrZgRBHUrYRlJ4V419lVb
 go.opentelemetry.io/contrib/propagators/jaeger v1.35.0/go.mod h1:0ciyFyYZxE6JqRAQvIgGRabKWDUmNdW3GAQb6y/RlFU=
 go.opentelemetry.io/contrib/samplers/jaegerremote v0.30.0 h1:bQ1Gvah4Sp8z7epSkgJaNTuZm7sutfA6Fji2/7cKFMc=
 go.opentelemetry.io/contrib/samplers/jaegerremote v0.30.0/go.mod h1:9b8Q9rH52NgYH3ShiTFB5wf18Vt3RTH/VMB7LDcC1ug=
-go.opentelemetry.io/contrib/zpages v0.62.0 h1:9fUYTLmrK0x/lweM2uM+BOx069jLx8PxVqWhegGJ9Bo=
-go.opentelemetry.io/contrib/zpages v0.62.0/go.mod h1:C8kXoiC1Ytvereztus2R+kqdSa6W/MZ8FfS8Zwj+LiM=
+go.opentelemetry.io/contrib/zpages v0.63.0 h1:TppOKuZGbqXMgsfjqq3i09N5Vbo1JLtLImUqiTPGnX4=
+go.opentelemetry.io/contrib/zpages v0.63.0/go.mod h1:5F8uugz75ay/MMhRRhxAXY33FuaI8dl7jTxefrIy5qk=
 go.opentelemetry.io/otel v1.21.0/go.mod h1:QZzNPQPm1zLX4gZK4cMi+71eaorMSGT3A4znnUvNNEo=
 go.opentelemetry.io/otel v1.38.0 h1:RkfdswUDRimDg0m2Az18RKOsnI8UDzppJAtj01/Ymk8=
 go.opentelemetry.io/otel v1.38.0/go.mod h1:zcmtmQ1+YmQM9wrNsTGV/q/uyusom3P8RxwExxkZhjM=
