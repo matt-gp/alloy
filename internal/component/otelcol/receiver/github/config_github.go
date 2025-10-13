@@ -14,6 +14,7 @@ type GithubConfig struct {
 	InitialDelay       time.Duration            `alloy:"initial_delay,attr,optional"`
 	CollectionInterval time.Duration            `alloy:"collection_interval,attr,optional"`
 	Scrapers           map[string]ScraperConfig `alloy:"scraper,block"`
+	Webhooks           map[string]WebhookConfig `alloy:"webhook,block,optional"`
 }
 
 func (args GithubConfig) Convert() githubreceiver.Config {
@@ -27,6 +28,7 @@ func (args GithubConfig) Convert() githubreceiver.Config {
 			InitialDelay:       args.InitialDelay,
 			CollectionInterval: args.CollectionInterval,
 		},
+		WebHook: args.Convert().WebHook,
 	}
 
 	*(*map[string]interface{})(unsafe.Pointer(&config.Scrapers)) = convertedScrapers
@@ -39,11 +41,15 @@ func (args *GithubConfig) SetToDefault() {
 		args.InitialDelay = 0
 	}
 	if args.CollectionInterval == 0 {
-		args.CollectionInterval = 60 * time.Second
+		args.CollectionInterval = 30 * time.Second
 	}
 
 	for _, scraper := range args.Scrapers {
 		scraper.SetToDefault()
+	}
+
+	for _, webhook := range args.Webhooks {
+		webhook.SetToDefault()
 	}
 }
 
@@ -57,6 +63,7 @@ func (args GithubConfig) Validate() error {
 	return nil
 }
 
+// scraper
 type ScraperConfig struct {
 	GithubOrg   string        `alloy:"github_org,attr"`
 	SearchQuery string        `alloy:"search_query,attr"`
@@ -156,5 +163,38 @@ func (mc *MetricsConfig) SetToDefault() {
 		VCSRefTime:              MetricConfig{Enabled: true},
 		VCSRepositoryCount:      MetricConfig{Enabled: true},
 		VCSContributorCount:     MetricConfig{Enabled: false},
+	}
+}
+
+// Webhook
+type WebhookConfig struct {
+	Endpoint        string            `alloy:"endpoint,attr"`
+	Path            string            `alloy:"path,attr,optional"`
+	HealthPath      string            `alloy:"health_path,attr,optional"`
+	Secret          string            `alloy:"secret,attr,optional"`
+	RequiredHeaders map[string]string `alloy:"required_headers,attr,optional"`
+}
+
+func (wc WebhookConfig) Convert() map[string]interface{} {
+	return map[string]interface{}{
+		"endpoint":         wc.Endpoint,
+		"path":             wc.Path,
+		"health_path":      wc.HealthPath,
+		"secret":           wc.Secret,
+		"required_headers": wc.RequiredHeaders,
+	}
+}
+
+func (wc *WebhookConfig) SetToDefault() {
+	if wc.Endpoint == "" {
+		wc.Endpoint = "localhost:8080"
+	}
+
+	if wc.Path == "" {
+		wc.Path = "/events"
+	}
+
+	if wc.HealthPath == "" {
+		wc.HealthPath = "/health"
 	}
 }

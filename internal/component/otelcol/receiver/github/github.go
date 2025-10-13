@@ -50,6 +50,7 @@ func (args Arguments) Convert() (otelcomponent.Config, error) {
 	return &githubreceiver.Config{
 		ControllerConfig: args.Github.Convert().ControllerConfig,
 		Scrapers:         args.Github.Convert().Scrapers,
+		WebHook:          args.Github.Convert().WebHook,
 	}, nil
 }
 
