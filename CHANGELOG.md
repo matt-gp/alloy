@@ -1,37 +1,6 @@
 # Changelog
 
-> _Contributors should read our [contributors guide][] for instructions on how
-> to update the changelog._
-
-This document contains a historical list of changes between releases. Only
-changes that impact end-user behavior are listed; changes to documentation or
-internal API changes are not present.
-
-Main (unreleased)
------------------
-
-### Features
-
-- (_Experimental_) A new `otelcol.receiver.awss3` component to receive traces previously stored in S3 by the [AWS S3 Exporter](https://grafana.com/docs/alloy/latest/reference/components/otelcol/otelcol.exporter.awss3/). (@x1unix)
-
-- (_Experimental_) Add `pyroscope.enrich` component to enrich profiles using labels from `discovery.*` components. (@AndreZiviani)
-
-- Add htpasswd file based authentication for `otelcol.auth.basic` (@pkarakal)
-
-### Enhancements
-
-- update promtail converter to use `file_match` block for `loki.source.file` instead of going through `local.file_match`. (@kalleep)
-
-- Added `send_traceparent` option for `tracing` config to enable traceparent header propagation. (@MyDigitalLife)
-
-### Bugfixes
-
-
-- (_Public Preview_) Additions to `database_observability.postgres` component:
-    - fixes collection of Postgres schema details for mixed case table names (@fridgepoet)
-
-v1.12.0-rc.3
------------------
+## [1.12.0](https://github.com/grafana/alloy/compare/v1.11.3...v1.12.0) (2025-12-01)
 
 ### Breaking changes
 
@@ -41,6 +10,8 @@ v1.12.0-rc.3
   set the `instance` label to `sys.env("HOSTNAME")`. (@thampiotr)
 
 ### Features
+
+- Add `otelcol.exporter.file` component to write metrics, logs, and traces to disk with optional rotation, compression, and grouping by resource attribute. (@madhub)
 
 - (_Experimental_) Add an `otelcol.receiver.cloudflare` component to receive
   logs pushed by Cloudflare's [LogPush](https://developers.cloudflare.com/logs/logpush/) jobs. (@x1unix)
@@ -85,6 +56,8 @@ v1.12.0-rc.3
 - Add `file_match` block to `loki.source.file` for built-in file discovery using glob patterns. (@kalleep)
 
 - Add a `regex` argument to the `structured_metadata` stage in `loki.process` to extract labels matching a regular expression. (@timonegk)
+
+- Add `lazy_mode` argument to the `pyroscope.ebpf` to defer eBPF profiler startup until there are targets to profile. (@luweglarz)
 
 - OpenTelemetry Collector dependencies upgraded from v0.134.0 to v0.139.0. (@dehaansa)
   - All `otelcol.receiver.*` components leveraging an HTTP server can configure HTTP keep alive behavior with `keep_alives_enabled`.
