@@ -1008,6 +1008,7 @@ require (
 	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/splunk v0.147.0
 	github.com/spf13/viper v1.19.0
 	github.com/zricethezav/gitleaks/v8 v8.30.0
+	github.com/open-telemetry/opentelemetry-collector-contrib/receiver/githubreceiver v0.145.0
 )
 
 require (
